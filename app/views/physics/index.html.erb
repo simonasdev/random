@@ -1,0 +1,27 @@
+<h1>Listing physics</h1>
+
+<table>
+  <tr>
+    <th>Condition</th>
+    <th>Insanity</th>
+    <th>Astrauskiene</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @physics.each do |physic| %>
+  <tr>
+    <td><%= physic.condition %></td>
+    <td><%= physic.insanity %></td>
+    <td><%= physic.astrauskiene %></td>
+    <td><%= link_to 'Show', physic %></td>
+    <td><%= link_to 'Edit', edit_physic_path(physic) %></td>
+    <td><%= link_to 'Destroy', physic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Physic', new_physic_path %>

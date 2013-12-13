@@ -1,0 +1,29 @@
+<%= form_for(@physic) do |f| %>
+  <% if @physic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@physic.errors.count, "error") %> prohibited this physic from being saved:</h2>
+
+      <ul>
+      <% @physic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :condition %><br />
+    <%= f.text_field :condition %>
+  </div>
+  <div class="field">
+    <%= f.label :insanity %><br />
+    <%= f.number_field :insanity %>
+  </div>
+  <div class="field">
+    <%= f.label :astrauskiene %><br />
+    <%= f.check_box :astrauskiene %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

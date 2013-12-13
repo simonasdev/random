@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Condition:</b>
+  <%= @physic.condition %>
+</p>
+
+<p>
+  <b>Insanity:</b>
+  <%= @physic.insanity %>
+</p>
+
+<p>
+  <b>Astrauskiene:</b>
+  <%= @physic.astrauskiene %>
+</p>
+
+
+<%= link_to 'Edit', edit_physic_path(@physic) %> |
+<%= link_to 'Back', physics_path %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  condition: MyString
+  insanity: 1
+  astrauskiene: false
+
+two:
+  condition: MyString
+  insanity: 1
+  astrauskiene: false
